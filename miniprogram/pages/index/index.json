@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "z-swiper": "../../components/z-swiper/index"
+  }
+  
+}

@@ -1,2 +1,6 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="page">
+  <z-swiper list="{{ swiperList}}">
+
+  </z-swiper>
+</view>

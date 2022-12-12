@@ -1,4 +1,4 @@
-// pages/me/index.ts
+// pages/menu/index.ts
 Page({
 
   /**
@@ -27,7 +27,6 @@ Page({
    */
   onShow() {
     this.getTabBar().init()
-    
 
   },
 

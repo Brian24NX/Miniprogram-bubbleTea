@@ -5,6 +5,7 @@ Page({
    * Page initial data
    */
   data: {
+    swiperList: []
 
   },
 
@@ -12,7 +13,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad() {
-
+    wx.request({
+      url: 'https://mock.apifox.cn/m1/1646135-0-default/page/home',
+      method: 'GET',
+      success: (res) => {
+        this.setData({
+          swiperList: res.data.swiper
+        })
+      }
+    })
   },
 
   /**
@@ -26,6 +35,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow() {
+    this.getTabBar().init()
 
   },
 
