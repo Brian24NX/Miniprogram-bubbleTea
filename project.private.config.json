@@ -1,6 +1,7 @@
 {
   "projectname": "miniprogram-bubble_tea",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false
   }
 }

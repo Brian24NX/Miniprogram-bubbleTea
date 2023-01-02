@@ -1,39 +1,18 @@
-// pages/index/index.ts
-import pageApi from '../../api/page'
-import navigator from "../../utils/navigator"
-
+// pages/login/index.ts
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    swiperList: <SwiperData[]> [],
-    iconNavigations: <IconNavigation[]>[]
 
   },
 
   /**
    * Lifecycle function--Called when page load
    */
-  async onLoad() {
-    const {swiper, iconNavigations} = await pageApi.home()
-    this.setData({
-      swiperList: swiper,
-      iconNavigations: iconNavigations
-    })
-  },
+  onLoad() {
 
-  onIconNavigationTap(event: ItemParam) {
-    const { type, target } = event.currentTarget.dataset.item
-    navigator.to(type, target)
-  },
-
-  goToLogin() {
-    wx.navigateTo({url: '/pages/login/index'})
-  },
-  goToStore() {
-    wx.switchTab({url: '/pages/menu/index'})
   },
 
   /**
@@ -47,7 +26,6 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow() {
-    this.getTabBar().init()
 
   },
 

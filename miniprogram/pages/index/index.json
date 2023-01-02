@@ -2,7 +2,8 @@
   "component": true,
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
-    "z-swiper": "../../components/z-swiper/index"
+    "z-swiper": "../../components/z-swiper/index",
+    "van-progress": "@vant/weapp/progress/index"
   }
   
 }
